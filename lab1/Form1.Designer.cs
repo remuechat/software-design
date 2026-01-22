@@ -20,20 +20,53 @@
 			base.Dispose(disposing);
 		}
 
-		#region Windows Form Designer generated code
+        #region Windows Form Designer generated code
 
-		/// <summary>
-		///  Required method for Designer support - do not modify
-		///  the contents of this method with the code editor.
-		/// </summary>
-		private void InitializeComponent()
-		{
-			this.components = new System.ComponentModel.Container();
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(800, 450);
-			this.Text = "Form1";
-		}
+        /// <summary>
+        ///  Required method for Designer support - do not modify
+        ///  the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            buttonSort = new Button();
+            listBox1 = new ListBox();
+            SuspendLayout();
+            // 
+            // buttonSort
+            // 
+            buttonSort.Location = new Point(55, 82);
+            buttonSort.Name = "buttonSort";
+            buttonSort.Size = new Size(174, 42);
+            buttonSort.TabIndex = 0;
+            buttonSort.Text = "Button Sort";
+            buttonSort.UseVisualStyleBackColor = true;
+            buttonSort.Click += buttonSort_Click;
+            // 
+            // listBox1
+            // 
+            listBox1.FormattingEnabled = true;
+            listBox1.ItemHeight = 15;
+            listBox1.Location = new Point(262, 82);
+            listBox1.Name = "listBox1";
+            listBox1.Size = new Size(428, 274);
+            listBox1.TabIndex = 1;
+            listBox1.SelectedIndexChanged += listBox1_SelectedIndexChanged;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(listBox1);
+            Controls.Add(buttonSort);
+            Name = "Form1";
+            Text = "Form1";
+            ResumeLayout(false);
+        }
 
-		#endregion
-	}
+        #endregion
+
+        private Button buttonSort;
+        private ListBox listBox1;
+    }
 }
