@@ -40,7 +40,7 @@
             buttonSort.TabIndex = 0;
             buttonSort.Text = "Button Sort";
             buttonSort.UseVisualStyleBackColor = true;
-            buttonSort.Click += buttonSort_Click;
+            buttonSort.Click += btnSort_Click;
             // 
             // listBox1
             // 
@@ -50,7 +50,6 @@
             listBox1.Name = "listBox1";
             listBox1.Size = new Size(428, 274);
             listBox1.TabIndex = 1;
-            listBox1.SelectedIndexChanged += listBox1_SelectedIndexChanged;
             // 
             // Form1
             // 
